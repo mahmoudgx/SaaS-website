@@ -51,7 +51,7 @@ const companies = [
 
 const TrustedBy = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-10 md:p-20">
+    <div className="bg-gradient-to-r from-blue-200 to-cyan-200 py-10 md:p-20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-2xl font-semibold mb-8">
           Trusted by companies all over the world
@@ -62,7 +62,7 @@ const TrustedBy = () => {
               <img
                 src={company.logo}
                 alt={`${company.name} logo`}
-                className="mx-auto h-12"
+                className="mx-auto md:h-12 h-10"
               />
             </div>
           ))}

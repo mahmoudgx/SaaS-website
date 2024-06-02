@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
-    <nav className="px-4 md:px-20 py-6 md:py-10">
-      <div className="container mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
-        <div className="text-xl font-bold">SaaSRevive</div>
+    <nav className="px-4 md:px-20 py-2.5 md:py-5">
+      <div className="container mx-auto px-4 py-2 flex flex-wrap justify-center md:justify-between items-center">
+        <div className="text-xl font-bold">SaaS Website</div>
         <div className="space-x-4 hidden md:flex">
           <a href="#features" className="text-gray-400">
             Features
