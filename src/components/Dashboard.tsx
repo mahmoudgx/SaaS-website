@@ -2,10 +2,11 @@ import dashboard from "../assets/dashboard.png";
 
 const Dashboard = () => {
   return (
-    <div className="bg-white relative ">
+    <div className="bg-white relative">
       <div className="flex justify-center">
         <img
           src={dashboard}
+          loading="lazy"
           className="w-full px-5 max-w-4xl"
           alt="Dashboard"
         />
