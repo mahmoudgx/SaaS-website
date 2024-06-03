@@ -1,5 +1,4 @@
 import Dashboard from "./components/Dashboard";
-import Features from "./components/Features";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import TrustedBy from "./components/TrustedBy";
@@ -11,7 +10,6 @@ const App = () => {
       <HeroSection />
       <Dashboard />
       <TrustedBy />
-      <Features />
     </>
   );
 };
