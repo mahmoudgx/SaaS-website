@@ -1,19 +1,19 @@
 const Navbar = () => {
   return (
-    <nav className="px-4 md:px-20 py-2.5 md:py-5">
+    <nav className="px-4 md:px-20 py-2.5 md:py-5 bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-2 flex flex-wrap justify-center md:justify-between items-center">
         <div className="text-xl font-bold">SaaS Website</div>
         <div className="space-x-4 hidden md:flex">
-          <a href="#features" className="text-gray-500 font-semibold">
+          <a href="#features" className="text-black font-semibold">
             Features
           </a>
-          <a href="#enterprise" className="text-gray-500 font-semibold">
+          <a href="#enterprise" className="text-black font-semibold">
             Enterprise
           </a>
-          <a href="#resources" className="text-gray-500 font-semibold">
+          <a href="#resources" className="text-black font-semibold">
             Resources
           </a>
-          <a href="#pricing" className="text-gray-500 font-semibold">
+          <a href="#pricing" className="text-black font-semibold">
             Pricing
           </a>
         </div>

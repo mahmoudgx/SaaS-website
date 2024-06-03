@@ -3,6 +3,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url("./assets/architect.svg");
+    scroll-behavior: smooth;
 }
 @tailwind utilities;

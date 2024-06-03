@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="relative md:py-20 py-10">
+    <div className="relative md:py-20 py-10 bg-[url('./assets/architect.svg')] bg-center">
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-3xl md:text-7xl font-bold mb-4  md:leading-snug leading-tight">
           Made for people Built
