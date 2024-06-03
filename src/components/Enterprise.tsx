@@ -1,5 +1,3 @@
-const CardData = [{}];
-
 const Enterprise = () => {
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:p-20 p-5 items-center">
