@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export interface SectionProps {
   image: string;
@@ -20,10 +21,14 @@ const Section: React.FC<SectionProps> = ({
   reverse,
 }) => {
   return (
-    <div
+    <motion.div
       className={`container mx-auto md:px-40 flex flex-col md:flex-row ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <div className="md:w-1/2 p-4 flex items-center">
         <img src={image} alt={title} className="w-full h-auto" />
@@ -54,7 +59,7 @@ const Section: React.FC<SectionProps> = ({
           </button>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

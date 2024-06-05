@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 const HeroSection = () => {
   return (
-    <div className="relative md:py-20 py-10 bg-[url('./assets/architect.svg')] bg-center">
+    <motion.div
+      className="relative md:py-20 py-10 bg-[url('./assets/architect.svg')] bg-center"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h1 className="text-3xl md:text-7xl font-bold mb-4  md:leading-snug leading-tight">
+        <h1 className="text-3xl md:text-7xl font-bold mb-4 md:leading-snug leading-tight">
           Made for people Built
           <br className="hidden md:inline" /> for productivity
         </h1>
@@ -26,7 +34,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 md:h-[300px] h-[250px] bg-gradient-to-t from-white to-transparent"></div>
-    </div>
+    </motion.div>
   );
 };
 

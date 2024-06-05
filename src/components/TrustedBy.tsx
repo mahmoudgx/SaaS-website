@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const companies = [
   {
     name: "Uber",
@@ -58,13 +60,20 @@ const TrustedBy = () => {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {companies.map((company, index) => (
-            <div key={index} className="p-4 bg-white rounded-lg shadow">
+            <motion.div
+              key={index}
+              className="p-4 bg-white rounded-lg shadow"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               <img
                 src={company.logo}
                 alt={`${company.name} logo`}
                 className="mx-auto md:h-12 h-10"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

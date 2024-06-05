@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
 import dashboard from "../assets/dashboard.png";
 
 const Dashboard = () => {
   return (
-    <div className="bg-white relative">
+    <motion.div
+      className="bg-white relative"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="flex justify-center">
         <img
           src={dashboard}
@@ -12,7 +19,7 @@ const Dashboard = () => {
         />
       </div>
       <div className="absolute bottom-0 left-0 right-0 md:h-[500px] h-[250px] bg-gradient-to-t from-white to-transparent"></div>
-    </div>
+    </motion.div>
   );
 };
 
