@@ -9,6 +9,10 @@ export default {
       colors: {
         ponl: "#BBB6FC",
         lfoj: "#ABE1FA"
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        arabic: ['Cairo', 'sans-serif']
       }
     },
   },

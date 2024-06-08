@@ -1,0 +1,22 @@
+{
+  "welcome": "SaaS Website",
+  "features": "Features",
+  "enterprise": "Enterprise",
+  "resources": "Resources",
+  "pricing": "Pricing",
+  "login": "Log In",
+  "try_for_free": "Try for Free",
+  "hero": {
+    "title": {
+      "part1": "Made for people Built",
+      "part2": "for productivity"
+    },
+    "description": {
+      "part1": "Connect the right people, find anything you need and automate",
+      "part2": "the rest. That’s work in Slack, your productivity platform."
+    },
+    "signup_google": "Sign Up with Google",
+    "try_for_free": "Try for Free"
+  },
+  "trusted_by": "Trusted by companies all over the world"
+}

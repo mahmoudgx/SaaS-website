@@ -1,4 +1,6 @@
+import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const companies = [
   {
@@ -51,13 +53,13 @@ const companies = [
   },
 ];
 
-const TrustedBy = () => {
+const TrustedBy: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-gradient-to-r from-blue-200 to-cyan-200 py-10 md:p-20">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl font-semibold mb-8">
-          Trusted by companies all over the world
-        </h2>
+        <h2 className="text-2xl font-semibold mb-8">{t("trusted_by")}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {companies.map((company, index) => (
             <motion.div
