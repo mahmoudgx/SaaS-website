@@ -38,7 +38,7 @@ const MainLayout: React.FC = () => {
   ];
 
   return (
-    <div className="md:space-y-20 py-10 md:text-left text-center">
+    <div className="md:space-y-20 py-10 max-sm:text-center">
       {sections.map((section, index) => (
         <Section key={index} {...section} />
       ))}

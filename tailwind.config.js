@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
-        arabic: ['Cairo', 'sans-serif']
+        arabic: ['Almarai', 'sans-serif']
       }
     },
   },

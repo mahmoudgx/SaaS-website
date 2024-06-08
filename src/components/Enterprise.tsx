@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import i18n from "../i18n";
 
 const Enterprise = () => {
   const stats = [
@@ -11,8 +12,8 @@ const Enterprise = () => {
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:p-20 p-5 items-center">
       <motion.div
-        className="md:space-y-6 md:text-left text-center space-y-4"
-        initial={{ opacity: 0, x: -50 }}
+        className="md:space-y-6 max-sm:text-center space-y-4"
+        initial={{ opacity: 0, x: i18n.language === "ar" ? 50 : -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.2 }}
