@@ -59,16 +59,28 @@ const Navbar: React.FC = () => {
                 : "md:space-x-4"
             }`}
           >
-            <a href="#features" className="text-black font-semibold">
+            <a
+              href="#features"
+              className="text-black font-semibold hover:underline"
+            >
               {t("features")}
             </a>
-            <a href="#enterprise" className="text-black font-semibold">
+            <a
+              href="#enterprise"
+              className="text-black font-semibold hover:underline"
+            >
               {t("Company")}
             </a>
-            <a href="#resources" className="text-black font-semibold">
+            <a
+              href="#resources"
+              className="text-black font-semibold hover:underline"
+            >
               {t("resources")}
             </a>
-            <a href="#pricing" className="text-black font-semibold">
+            <a
+              href="#pricing"
+              className="text-black font-semibold hover:underline"
+            >
               {t("pricing")}
             </a>
           </div>

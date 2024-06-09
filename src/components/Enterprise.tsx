@@ -29,7 +29,7 @@ const Enterprise = () => {
         <div
           className={
             i18n.language === "ar"
-              ? "md:space-x-reverse-2 space-y-2"
+              ? "md:space-x-reverse space-x-2 space-y-2"
               : "md:space-x-2 space-y-2"
           }
         >
