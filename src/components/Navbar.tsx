@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
               {t("features")}
             </a>
             <a href="#enterprise" className="text-black font-semibold">
-              {t("enterprise")}
+              {t("Company")}
             </a>
             <a href="#resources" className="text-black font-semibold">
               {t("resources")}

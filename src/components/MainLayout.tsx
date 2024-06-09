@@ -1,38 +1,45 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Section, { SectionProps } from "./Section";
 import cardone from "../assets/card1.png";
 import cardtwo from "../assets/card2.png";
 import cardthree from "../assets/card3.png";
 
 const MainLayout: React.FC = () => {
+  const { t } = useTranslation();
+
   const sections: SectionProps[] = [
     {
       image: cardone,
-      title: "Customize features to your specific needs.",
-      description: `Apps keep work and information right at your fingertips, and Slack keeps it all securely working together.`,
-      features: [
-        "Apps with org-wide deployment enabled can be installed at the org level in an Enterprise Grid org and ring subsequently",
-      ],
-      button: "Learn More",
+      title: t("section1.title"),
+      description: t("section1.description"),
+      features: [t("section1.features.0")],
+      button: t("section1.button"),
       reverse: false,
     },
     {
       image: cardtwo,
-      title: "Customize work style for peak and efficiency.",
-      description: `In Slack, you’ve got all the flexibility to work when, where and how its best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.`,
-      features: ["Workflow Builder", "Slack APIs"],
-      button: "Learn More",
+      title: t("section2.title"),
+      description: t("section2.description"),
+      features: [t("section2.features.0"), t("section2.features.1")],
+      button: t("section2.button"),
       reverse: true,
     },
     {
       image: cardthree,
-      title: "Bring your team together",
-      description: `At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In channels, it’s easier to connect across departments, offices, time zones and even other companies.`,
+      title: t("section3.title"),
+      description: t("section3.description"),
       stats: [
-        { value: "28%", text: "Increase in time saved due to automation" },
-        { value: "80%", text: "Of those who build Slack are non-technical" },
+        {
+          value: t("section3.stats.0.value"),
+          text: t("section3.stats.0.text"),
+        },
+        {
+          value: t("section3.stats.1.value"),
+          text: t("section3.stats.1.text"),
+        },
       ],
-      button: "Learn More",
+      button: t("section3.button"),
       reverse: false,
     },
   ];

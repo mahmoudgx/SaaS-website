@@ -1,37 +1,29 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
+// Define the types for the blog posts
+interface BlogPost {
+  img: string;
+  date: string;
+  category: string;
+  title: string;
+}
+
 const Blog = () => {
-  const blogPosts = [
-    {
-      img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      date: "December 12, 2023",
-      category: "Event",
-      title:
-        "Get ready for AI in Slack - innovation awaits with advanced capabilities",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      date: "December 15, 2023",
-      category: "On-demand",
-      title: "Big launches recap world tour new york highlights.",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      date: "December 19, 2023",
-      category: "Customer Story",
-      title: "Expanding ChatGpt with Slack: OpenAI's Approach.",
-    },
-  ];
+  const { t } = useTranslation();
+
+  // Get blog posts from translations
+  const blogPosts: BlogPost[] = t("blog.posts", { returnObjects: true });
 
   return (
     <div className="mt-10">
       <div className="mb-10">
         <h1 className="text-center md:text-3xl text-2xl font-bold">
-          Take a deeper dive into a new way to work
+          {t("blog.title")}
         </h1>
       </div>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4 md:px-20 p-4">
-        {blogPosts.map((post, index) => (
+        {blogPosts.map((post: BlogPost, index: number) => (
           <motion.div
             key={index}
             className="border-2 rounded-xl overflow-hidden h-auto flex flex-col"

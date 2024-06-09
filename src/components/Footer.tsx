@@ -1,15 +1,18 @@
+import { useTranslation } from "react-i18next";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="grid md:grid-cols-7 grid-cols-1 md:p-20 p-4">
         <div className="space-y-2 mb-5 md:col-span-2">
-          <h1 className="text-xl font-bold">SaaS Website</h1>
+          <h1 className="text-xl font-bold">
+            {t("footer.saas_website.title")}
+          </h1>
           <p className="text-gray-500">
-            saas website enhances team communication boosts productivity with
-            user-friendly features
+            {t("footer.saas_website.description")}
           </p>
           <div className="space-x-3 flex">
             <FaFacebook size={20} />
@@ -18,47 +21,83 @@ const Footer = () => {
           </div>
         </div>
         <div className="space-y-5 mb-5 md:col-span-1">
-          <h1 className="font-bold">Why Slack ?</h1>
-          <h1 className="text-gray-500 text-sm">Slack Vs. Email</h1>
-          <h1 className="text-gray-500 text-sm">channels</h1>
-          <h1 className="text-gray-500 text-sm">Engagement</h1>
-          <h1 className="text-gray-500 text-sm">Scale</h1>
-          <h1 className="text-gray-500 text-sm">Watch Demo</h1>
+          <h1 className="font-bold">{t("footer.why_slack.title")}</h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.why_slack.vs_email")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {" "}
+            {t("footer.why_slack.channels")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.why_slack.engagement")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.why_slack.scale")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.why_slack.watch_demo")}
+          </h1>
         </div>
         <div className="space-y-5 mb-5 md:col-span-1">
-          <h1 className="font-bold">Product</h1>
-          <h1 className="text-gray-500 text-sm">Features</h1>
-          <h1 className="text-gray-500 text-sm">Integrations</h1>
-          <h1 className="text-gray-500 text-sm">Enterprise</h1>
-          <h1 className="text-gray-500 text-sm">Solutions</h1>
+          <h1 className="font-bold">{t("footer.product.title")}</h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.product.features")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.product.integrations")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.product.enterprise")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.product.solutions")}
+          </h1>
         </div>
         <div className="space-y-5 mb-5 md:col-span-1">
-          <h1 className="font-bold">Pricing</h1>
-          <h1 className="text-gray-500 text-sm">Plans</h1>
-          <h1 className="text-gray-500 text-sm">Paid vs. Free</h1>
+          <h1 className="font-bold"> {t("footer.pricing.title")}</h1>
+          <h1 className="text-gray-500 text-sm">{t("footer.pricing.plans")}</h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.pricing.paid_vs_free")}
+          </h1>
         </div>
         <div className="space-y-5 mb-5 md:col-span-1">
-          <h1 className="font-bold">Resources</h1>
-          <h1 className="text-gray-500 text-sm">Partners</h1>
-          <h1 className="text-gray-500 text-sm">Developer</h1>
-          <h1 className="text-gray-500 text-sm">Community</h1>
-          <h1 className="text-gray-500 text-sm">Apps</h1>
-          <h1 className="text-gray-500 text-sm">Help Center</h1>
+          <h1 className="font-bold">{t("footer.resources.title")}</h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.resources.partners")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.resources.developer")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.resources.community")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.resources.apps")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.resources.help_center")}
+          </h1>
         </div>
         <div className="space-y-5 mb-5 md:col-span-1">
-          <h1 className="font-bold">Company</h1>
-          <h1 className="text-gray-500 text-sm">About Us</h1>
-          <h1 className="text-gray-500 text-sm">Leadership</h1>
-          <h1 className="text-gray-500 text-sm">News</h1>
-          <h1 className="text-gray-500 text-sm">Media Kit</h1>
-          <h1 className="text-gray-500 text-sm">Careers</h1>
+          <h1 className="font-bold">{t("footer.company.title")}</h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.company.about_us")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.company.leadership")}
+          </h1>
+          <h1 className="text-gray-500 text-sm"> {t("footer.company.news")}</h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.company.media_kit")}
+          </h1>
+          <h1 className="text-gray-500 text-sm">
+            {t("footer.company.careers")}
+          </h1>
         </div>
       </div>
       <div className="text-center text-xs text-gray-500 border-t-2  py-5">
-        <p>
-          © 2024 SaaS website Technologies, LLC, a Salesforce company. All
-          rights reserved. Various trademarks held by their respective owners
-        </p>
+        <p>{t("footer.footer_text")}</p>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 {
   "welcome": "SaaS Website",
   "features": "Features",
-  "enterprise": "Enterprise",
+  "Company": "Enterprise",
   "resources": "Resources",
   "pricing": "Pricing",
   "login": "Log In",
@@ -18,5 +18,111 @@
     "signup_google": "Sign Up with Google",
     "try_for_free": "Try for Free"
   },
-  "trusted_by": "Trusted by companies all over the world"
+  "trusted_by": "Trusted by companies all over the world",
+  "section1": {
+    "title": "Customize features to your specific needs.",
+    "description": "Apps keep work and information right at your fingertips, and Slack keeps it all securely working together.",
+    "features": ["Apps with org-wide deployment enabled can be installed at the org level in an Enterprise Grid org and ring subsequently"],
+    "button": "Learn More"
+  },
+  "section2": {
+    "title": "Customize work style for peak and efficiency.",
+    "description": "In Slack, you’ve got all the flexibility to work when, where and how its best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.",
+    "features": ["Workflow Builder", "Slack APIs"],
+    "button": "Learn More"
+  },
+  "section3": {
+    "title": "Bring your team together",
+    "description": "At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In channels, it’s easier to connect across departments, offices, time zones and even other companies.",
+    "stats": [
+      { "value": "28%", "text": "Increase in time saved due to automation" },
+      { "value": "80%", "text": "Of those who build Slack are non-technical" }
+    ],
+    "button": "Learn More"
+  },
+"blog": {
+      "title": "Take a deeper dive into a new way to work",
+      "posts": [
+        {
+          "img": "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "date": "December 12, 2023",
+          "category": "Event",
+          "title": "Get ready for AI in Slack - innovation awaits with advanced capabilities"
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "date": "December 15, 2023",
+          "category": "On-demand",
+          "title": "Big launches recap world tour new york highlights."
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "date": "December 19, 2023",
+          "category": "Customer Story",
+          "title": "Expanding ChatGpt with Slack: OpenAI's Approach."
+        }
+      ]
+    },
+"enterprise": {
+      "title": "Slack is trusted by teams of all sizes for seamless collaboration",
+      "description1": "Slack, a trusted collaboration platform, seamlessly caters to teams of all sizes, enhancing communication.",
+      "description2": "Slack, a trusted collaboration platform, seamlessly caters to teams of all sizes, enhancing communication and productivity with its versatile tools.",
+      "button1": "Meet Slack for Enterprise",
+      "button2": "Talk to Sales",
+      "stats": [
+        { "value": "40%", "text": "of users say Slack has improved communication" },
+        { "value": "75%", "text": "of users say Slack has improved communication" },
+        { "value": "60%", "text": "of users say Slack improved communication" },
+        { "value": "90%", "text": "of users say Slack has improved communication" }
+      ]
+    },
+    "try_it": {
+      "title": "Maximize potential with SaasRevive",
+      "description": "Maximize your team's potential by leveraging the powerful features of Slack. The versatile platform provides a streamlined communication hub where teams can collaborate seamlessly and stay organized in one centralized space.",
+      "button": "Try for free"
+    },
+    "footer": {
+      "saas_website": {
+        "title": "SaaS Website",
+        "description": "SaaS website enhances team communication boosts productivity with user-friendly features"
+      },
+      "why_slack": {
+        "title": "Why Slack ?",
+        "vs_email": "Slack Vs. Email",
+        "channels": "Channels",
+        "engagement": "Engagement",
+        "scale": "Scale",
+        "watch_demo": "Watch Demo"
+      },
+      "product": {
+        "title": "Product",
+        "features": "Features",
+        "integrations": "Integrations",
+        "enterprise": "Enterprise",
+        "solutions": "Solutions"
+      },
+      "pricing": {
+        "title": "Pricing",
+        "plans": "Plans",
+        "paid_vs_free": "Paid vs. Free"
+      },
+      "resources": {
+        "title": "Resources",
+        "partners": "Partners",
+        "developer": "Developer",
+        "community": "Community",
+        "apps": "Apps",
+        "help_center": "Help Center"
+      },
+      "company": {
+        "title": "Company",
+        "about_us": "About Us",
+        "leadership": "Leadership",
+        "news": "News",
+        "media_kit": "Media Kit",
+        "careers": "Careers"
+      },
+      "footer_text": "© 2024 SaaS website Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners"
+    }
+  
 }
