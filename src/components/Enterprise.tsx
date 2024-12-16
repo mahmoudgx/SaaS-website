@@ -13,7 +13,7 @@ const Enterprise = () => {
   const stats: Stat[] = t("enterprise.stats", { returnObjects: true });
 
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:p-20 p-5 items-center">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 overflow-hidden md:p-20 p-5 items-center">
       <motion.div
         className="md:space-y-6 max-sm:text-center space-y-4"
         initial={{ opacity: 0, x: i18n.language === "ar" ? 50 : -50 }}
